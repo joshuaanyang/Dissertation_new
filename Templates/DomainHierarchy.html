@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AS Hierarchy</title>
+</head>
+<body bgColor="Lavender">
+    <center>
+        <h1 style="font-size:1.75rem">AS Hierarchy</h1>
+    </center>
+    <hr noshade>
+    <p class="header3">This tool depicts the ASs with links to a specific AS depending on the hops.</p>
+    <form class = "grid" action = "/DHresult" method = "POST"> <!-- this statement creates an interactive form for the users,
+                                                                    action redirects the users to the stated hyperlink after submission-->
+        <label class="header3">Enter Domain ASN:</label> <!--label describing the prompted input -->
+        <input type = "text" name = "domainID" class="header3"><!-- states the type of input expected and stores the input expected in the prompt -->
+        <p>
+        <label class="header3">Enter Hop Cutoff:</label> <!--label describing the prompted input -->
+        <input type = "number" name = "cutoff" min="1" step="1" class="header3"><!-- states the type of input expected and stores the input expected in the prompt -->
+        </p>
+        <label class="header3">Enter Year:</label> <!--stores the search date -->
+        <input type = "number" name="Period" min="1998" max="2022" step="1" class="header3"> <!--month type displays the date in months and years,
+                                                min dictates the minimum date to be displayed to the users. -->
+        <center><input type = "Submit" class = "file_submit" style="height:30px; max-width:400px; border:none; background-color: SteelBlue; color:white; font-size:1rem"></center>
+    </form>
+</body>
+</html>
