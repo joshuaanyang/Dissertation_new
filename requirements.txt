@@ -1,4 +1,4 @@
-flask
-networkx
-matplotlib
-pandas
+flask==2.2.2
+networkx==2.8.8
+matplotlib==2.1.1
+pandas==1.5.1
