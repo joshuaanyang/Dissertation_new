@@ -7,6 +7,7 @@ from Documents import get_index_of_date
 import pandas as pd
 import itertools
 import os
+import openpyxl
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('agg')
