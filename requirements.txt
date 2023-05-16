@@ -2,3 +2,4 @@ flask
 networkx
 matplotlib
 pandas
+openpyxl
