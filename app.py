@@ -15,37 +15,37 @@ matplotlib.use('agg')
 app = Flask(__name__)  # INITIALISE THE APP FROM THE FLASK CLASS
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST"])
 def home():
     return render_template("index.html")  # RETURNS THE TEMPLATE STORED IN THE PARENTHESIS
 
 
-@app.route("/TopologyProperties")
+@app.route("/TopologyProperties", methods=["GET", "POST"])
 def topologyproperties():
     return render_template("TopologyProperties.html")
 
 
-@app.route("/CentralNodes")
+@app.route("/CentralNodes", methods=["GET", "POST"])
 def centralnodes():
     return render_template("CentralNodes.html")
 
 
-@app.route("/DomainHierarchy")
+@app.route("/DomainHierarchy", methods=["GET", "POST"])
 def domainhierarchy():
     return render_template("DomainHierarchy.html")
 
 
-@app.route("/DomainCount")
+@app.route("/DomainCount", methods=["GET", "POST"])
 def domaincount():
     return render_template("DomainCountPerPeriod.html")
 
 
-@app.route("/NewDomains")
+@app.route("/NewDomains", methods=["GET", "POST"])
 def newdomains():
     return render_template("NewDomainPerPeriod.html")
 
 
-@app.route("/RemovedDomains")
+@app.route("/RemovedDomains", methods=["GET", "POST"])
 def olddomains():
     return render_template("RemovedDomainPerPeriod.html")
 
