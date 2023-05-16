@@ -103,7 +103,7 @@ def tpresult():
     index = int(get_index_of_date(G, date))
     G[index] = nx.DiGraph()
     date = int(form_output["Period"])
-    df = pd.read_excel(f"Files/F{date}.xlsx")
+    df = pd.read_excel(f"files/F{date}.xlsx")
     G[index] = nx.from_pandas_edgelist(df, source='source', target='target', edge_attr='relationship',
                                        create_using=nx.DiGraph())
 
